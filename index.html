@@ -1,127 +1,322 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Santos | Desenvolvedor Full Stack</title>
+    
+    <!-- Meta Tags para SEO & Redes Sociais -->
+    <meta name="description" content="Portfólio de Vinícius Santos. Desenvolvedor focado em Python, Java, JavaScript, APIs REST e soluções Full Stack. Conheça meus projetos.">
+    <meta name="author" content="Vinícius Santos de Moura">
+    <meta property="og:title" content="Vinícius Santos | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Desenvolvedor de Software em formação. Python, FastAPI, Java, Spring Boot, JavaScript e React.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vinicius20-sm.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/267469940?v=4" type="image/png">
+
+    <!-- Fontes do Google (Inter & Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Devicon (Ícones oficiais de tecnologias) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
     <link rel="stylesheet" href="portifolio.css">
-    <title>Portfólio | Vinícius Santos</title>
-  
-
-
 </head>
-
 <body>
+
+    <!-- Navegação Superior Fixa -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Vinícius<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#contato" class="btn-nav">Fale Comigo</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
 
-        <h1>Olá, eu sou Vinícius</h1>
+        <!-- Seção Hero / Apresentação -->
+        <section class="hero" id="sobre">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Disponível para novas oportunidades
+                </div>
+                <h1 class="hero-title">
+                    Construindo soluções robustas da <span>Web</span> ao <span>Back-end</span>.
+                </h1>
+                <p class="hero-description">
+                    Olá! Meu nome é <strong>Vinícius Santos</strong>. Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> com foco na criação de APIs eficientes, arquitetura limpa e interfaces modernas com <strong>Python, Java e JavaScript</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">Explorar Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
+            </div>
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-ring">
+                    <img src="https://avatars.githubusercontent.com/u/267469940?v=4" alt="Foto de perfil de Vinícius Santos" class="avatar-img">
+                </div>
+            </div>
+        </section>
 
-        <h2>Apresentação</h2>
-
-
-        <p class="paragrafo">
-            Olá! Meu nome é Vinícius e sou estudante de Análise e Desenvolvimento de Sistemas.
-            Atualmente, estou desenvolvendo meus conhecimentos em HTML, CSS, JavaScript,
-            Python, SQL e React.
-
-            <br>
-
-            Gosto de aprender novas tecnologias e transformar o conhecimento adquirido
-            nos estudos em projetos práticos. Estou em busca da minha primeira oportunidade
-            profissional na área de tecnologia, onde possa aprender, contribuir com a equipe
-            e continuar evoluindo como desenvolvedor.
-        </p>
-
-        <h2>Conhecimentos</h2>
-
-        <div class="conhecimentos">
-            <div class="conhecimento">HTML</div>
-            <div class="conhecimento">CSS</div>
-            <div class="conhecimento">JavaScript</div>
-            <div class="conhecimento">Python</div>
-            <div class="conhecimento">SQL</div>
-            <div class="conhecimento">React</div>
-            <div class="conhecimento">Git</div>
-            <div class="conhecimento">GitHub</div>
-        </div>
-
-        <h2>Projetos</h2>
-
-       <div class="projeto">
-
-        <h3>Calculadora IMC</h3>
-
-        <p>Projeto desenvolvido para calcular o IMC utilizando
-            HTML, CSS e JavaScript.</p>
-
-            <a href="https://github.com/Vinicius20-SM/Calculadora_IMC" target="_blank">Ver projeto</a>
-
-           </div>
-            <div class="projeto">
-                <h3>Api de Controle de Finanças Pessoal</h3>
-                <p>API de gestão financeira pessoal com FastAPI e SQLite.</p>
-                <a href="https://github.com/Vinicius20-SM/api-financas-pessoais" target="_blank">Ver projeto</a>
+        <!-- Seção Habilidades / Stack -->
+        <section class="section" id="habilidades">
+            <div class="section-header">
+                <span class="section-subtitle">Tecnologias</span>
+                <h2 class="section-title">Minhas Ferramentas de Trabalho</h2>
             </div>
 
-        <div class="projeto">
-             <h3>Api de Controle de Finanças Pessoal</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-fastapi-plain colored"></i>
+                    <span>FastAPI</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-java-plain colored"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-spring-original colored"></i>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-react-original colored"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-sqlite-plain colored"></i>
+                    <span>SQLite / SQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <span>VS Code</span>
+                </div>
+            </div>
+        </section>
 
-            <p>API de gestão financeira pessoal com FastAPI e SQLite.</p>
+        <!-- Seção Projetos -->
+        <section class="section" id="projetos">
+            <div class="section-header">
+                <span class="section-subtitle">Portfólio</span>
+                <h2 class="section-title">Projetos em Destaque</h2>
+            </div>
 
-            <a href="https://github.com/Vinicius20-SM/api-financas-pessoais" target="_blank">Ver projeto</a>
+            <div class="projects-grid">
+                
+                <!-- Projeto 1: Freelance / Produção -->
+                <article class="project-card featured">
+                    <div class="card-badge">Freelance</div>
+                    <div class="card-body">
+                        <h3>Yvii Works</h3>
+                        <p class="project-desc">
+                            Website comercial desenvolvido sob medida para um cliente do segmento de impressão 3D e Pixel Art. Foco em layout atrativo, responsividade e apresentação do catálogo de produtos.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://yvii-works.github.io/yvii-works-impressoes-3d-e-pixel-art/" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                                Visitar Site
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-        </div>
+                <!-- Projeto 2: API de Finanças -->
+                <article class="project-card">
+                    <div class="card-body">
+                        <h3>API de Finanças Pessoais</h3>
+                        <p class="project-desc">
+                            API REST estruturada para gerenciamento orçamentário. Permite controle de despesas e receitas, persistência de dados com SQLite e documentação interativa com Swagger/OpenAPI.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinicius20-SM/api-financas-pessoais" target="_blank" rel="noopener noreferrer" class="btn btn-card-secondary">
+                                Ver no GitHub
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-        <div class="projeto">
-            <h3>Yvii Works</h3>
+                <!-- Projeto 3: Analisador de Sentimentos Java -->
+                <article class="project-card">
+                    <div class="card-body">
+                        <h3>Analisador de Sentimentos</h3>
+                        <p class="project-desc">
+                            Aplicação Full Stack baseada no ecossistema Java. Integração com banco de dados via Spring Data JPA, arquitetura em camadas e interface para visualização das análises textuais.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">JPA / Hibernate</span>
+                            <span class="tag">Web UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinicius20-SM/analisador-sentimentos-java" target="_blank" rel="noopener noreferrer" class="btn btn-card-secondary">
+                                Ver no GitHub
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-            <p> Site que eu fiz para um cliente no ramo de impressão 3D</p>
+                <!-- Projeto 4: Calculadora de IMC -->
+                <article class="project-card">
+                    <div class="card-body">
+                        <h3>Calculadora de IMC</h3>
+                        <p class="project-desc">
+                            Aplicação interativa no navegador para cálculo rápido do Índice de Massa Corporal (IMC) com classificação automática do peso e interface responsiva.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinicius20-SM/Calculadora_IMC" target="_blank" rel="noopener noreferrer" class="btn btn-card-secondary">
+                                Ver no GitHub
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-            <a href="https://yvii-works.github.io/yvii-works-impressoes-3d-e-pixel-art/">Ver o site</a>
-        </div>
+            </div>
+        </section>
 
-        <h2>Formação</h2>
+        <!-- Seção Trajetória: Formação & Experiência -->
+        <section class="section" id="trajetoria">
+            <div class="section-header">
+                <span class="section-subtitle">Histórico</span>
+                <h2 class="section-title">Formação & Experiência</h2>
+            </div>
 
-        <div>
-            <ul>
-                <li>Cursando Análise e Desenvolvimento de Sistemas pela Estácio (2º período)</li>
-                <li>Ensino Médio Completo</li>
-                <li>Curso de Computação em Nuvem pelo Senai</li>
-            </ul>
-        </div>
+            <div class="timeline-grid">
+                <div class="timeline-column">
+                    <h3 class="column-title"> Educação & Certificações</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="item-badge">Em andamento</div>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <p class="institution">Universidade Estácio de Sá</p>
+                        <p class="period">Graduação Tecnológica • 2º Período</p>
+                    </div>
 
-        <div class="formatacao">
-            <h2>Experiência</h2>
-        </div>
+                    <div class="timeline-item">
+                        <div class="item-badge">Certificado</div>
+                        <h4>Computação em Nuvem (Cloud Computing)</h4>
+                        <p class="institution">SENAI</p>
+                        <p class="period">Fundamentos de arquitetura em nuvem e infraestrutura</p>
+                    </div>
+                </div>
 
-        <p class="paragrafo">Possuo experiência profissional em áreas administrativas e de logística,
-            onde desenvolvi habilidades como organização, responsabilidade, trabalho em equipe,
-            atendimento ao cliente e cumprimento de prazos. <br>
-            <br>
-            Atualmente, estou direcionando minha carreira para a área de tecnologia,
-            complementando minha experiência profissional com estudos e projetos
-            de desenvolvimento.
-        </p>
+                <div class="timeline-column">
+                    <h3 class="column-title"> Experiência & Bagagem</h3>
+                    
+                    <div class="timeline-item">
+                        <h4>Transição de Carreira & Foco Tech</h4>
+                        <p class="institution">Desenvolvimento de Software</p>
+                        <p class="description">
+                            Bagagem profissional anterior nas áreas de logística e administração, consolidando soft skills cruciais: organização metódica, resolução de problemas sob pressão, trabalho em equipe e compromisso com entregas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Contato</h2>
+        <!-- Seção Contato -->
+        <section class="section contact-section" id="contato">
+            <div class="contact-box">
+                <span class="section-subtitle">Vamos conversar?</span>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="contact-text">
+                    Estou aberto a oportunidades profissionais, estágio, vagas júnior e projetos freelance. Envie uma mensagem!
+                </p>
 
+                <div class="contact-cards">
+                    <a href="mailto:viniciusdev28@gmail.com" class="contact-card">
+                        <div class="icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div>
+                            <span class="label">E-mail</span>
+                        </div>
+                    </a>
 
-        <address>
-            <a href="https://github.com/Vinicius20-SM">
-                <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white>
-            </a>
-            <a href="https://www.linkedin.com/in/vin%C3%ADcius-santos-de-moura-5853a3240" target="_blank">
-                <img
-                    src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-            </a>
-            <a href="mailto:viniciusdev28@gmail.com" target="_blank">
-                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-            </a>
-        </address>
+                    <a href="https://www.linkedin.com/in/vinícius-santos-de-moura-5853a3240" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="icon-wrap">
+                            <i class="devicon-linkedin-plain"></i>
+                        </div>
+                        <div>
+                            <span class="label">LinkedIn</span>
+                        </div>
+                    </a>
 
+                    <a href="https://github.com/Vinicius20-SM" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="icon-wrap">
+                            <i class="devicon-github-original"></i>
+                        </div>
+                        <div>
+                            <span class="label">GitHub</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-
-        <script src="portifolio.js"></script>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Vinícius Santos. Desenvolvido com HTML, CSS e JavaScript.</p>
+            <p class="footer-sub">Hospedado no GitHub Pages</p>
+        </div>
+    </footer>
+
 </body>
+</html>
